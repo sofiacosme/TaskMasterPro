@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo de búsqueda arriba -->
+    <EditText
+        android:id="@+id/edtBuscar"
+        android:hint="Buscar por título"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- RecyclerView para tareas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTareas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Barra de botones abajo -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:text="Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:text="Agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Métrica de progreso -->
+    <TextView
+        android:id="@+id/txtMetricas"
+        android:text="Progreso: 0% completado"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+</LinearLayout>
