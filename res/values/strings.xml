@@ -1,0 +1,44 @@
+<resources>
+  <string name="app_name">TaskMaster Pro</string>
+  <string name="auth_title">TaskMaster Pro</string>
+  <string name="auth_login_tab">Iniciar sesión</string>
+  <string name="auth_register_tab">Registrarse</string>
+  <string name="auth_email">Correo</string>
+  <string name="auth_password">Contraseña</string>
+  <string name="auth_confirm">Confirmar contraseña</string>
+  <string name="auth_display_name">Nombre</string>
+  <string name="auth_login">Entrar</string>
+  <string name="auth_signup">Crear cuenta</string>
+  <string name="auth_welcome_title">Bienvenido</string>
+  <string name="auth_welcome_sub">Inicia sesión o crea tu cuenta</string>
+  <!-- Validaciones Auth -->
+  <string name="auth_invalid_email">Correo inválido</string>
+  <string name="auth_password_required">Contraseña requerida</string>
+  <!-- (Recomendado) Si usas estos en Registro, agrégalos también -->
+  <string name="auth_empty_name">Ingresa tu nombre</string>
+  <string name="auth_password_mismatch">Las contraseñas no coinciden</string>
+  <!-- Variables Inicio -->
+  <string name="home_welcome">¡Bienvenido!</string>
+  <string name="home_hero_cd">Imagen destacada de la pantalla de inicio</string>
+  <!-- Home -->
+  <string name="home_title">Mi Perfil Profesional</string>
+  <string name="home_avatar_cd">Avatar del usuario</string>
+  <string name="home_search_hint">Buscar tareas, proyectos…</string>
+  <!-- Chips -->
+  <string name="chip_today">Hoy</string>
+  <string name="chip_pending">Pendientes</string>
+  <string name="chip_inprogress">En progreso</string>
+  <string name="chip_done">Completadas</string>
+  <!-- Banner -->
+  <string name="banner_title">Organiza tu día</string>
+  <string name="banner_desc">Crea tareas y mantén el ritmo.</string>
+  <string name="banner_cta">Crear tarea</string>
+  <string name="banner_cd">Imagen del banner</string>
+  <!-- Sección -->
+  <string name="section_recommended">Recomendados</string>
+  <string name="action_view_all">Ver todo</string>
+  <!-- Item -->
+  <string name="item_cd">Imagen del elemento</string>
+  <!-- Home -->
+  <string name="default_user">invitado</string>
+</resources>

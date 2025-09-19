@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+        <!-- Panel izquierdo fijo -->
+        <LinearLayout
+            android:id="@+id/left_panel"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="#2F3A59"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Botón Mi Perfil -->
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi Perfil"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:padding="12dp" />
+
+            <!-- Botón Capturas -->
+            <Button
+                android:id="@+id/btnCapturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capturas"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:padding="12dp" />
+
+            <!-- Botón Tutorial -->
+            <Button
+                android:id="@+id/btnTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tutorial"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:padding="12dp" />
+
+            <!-- Botón Recursos -->
+            <Button
+                android:id="@+id/btnRecursos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recursos"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:padding="12dp" />
+
+            <!-- Botón Acciones -->
+            <Button
+                android:id="@+id/btnAcciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acciones"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="?attr/selectableItemBackground"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Panel derecho dinámico -->
+        <FrameLayout
+            android:id="@+id/right_panel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
