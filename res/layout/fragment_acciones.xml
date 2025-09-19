@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Botón Nueva Tarea -->
+    <Button
+        android:id="@+id/btnNuevaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Nueva Tarea"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Exportar -->
+    <Button
+        android:id="@+id/btnExportar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📤 Exportar"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Limpiar -->
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗑 Limpiar Tareas"
+        android:textAllCaps="false"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Sincronizar -->
+    <Button
+        android:id="@+id/btnSincronizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔄 Sincronizar"
+        android:textAllCaps="false"
+        android:backgroundTint="#03A9F4"
+        android:textColor="@android:color/white" />
+</LinearLayout>

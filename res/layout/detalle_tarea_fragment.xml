@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imgTarea"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen de la tarea" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Prioridad -->
+        <TextView
+            android:id="@+id/txtPrioridad"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <!-- Botón completar -->
+        <Button
+            android:id="@+id/btnCompletar"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar tarea"
+            android:backgroundTint="@color/verde_tarea"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:backgroundTint="@color/rojo_volver"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>
