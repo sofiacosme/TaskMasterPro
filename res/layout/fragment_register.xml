@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="16dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_user"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:contentDescription="@string/auth_title" />
+
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar foto"
+        android:layout_marginTop="8dp" />
+
+
+
+    <!-- Tus campos existentes (dejamos tus EditText tal cual) -->
+    <EditText
+        android:id="@+id/edtName"
+        android:hint="@string/auth_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:hint="@string/auth_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:hint="@string/auth_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtConfirm"
+        android:hint="@string/auth_confirm"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:text="@string/auth_signup"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+</ScrollView>
