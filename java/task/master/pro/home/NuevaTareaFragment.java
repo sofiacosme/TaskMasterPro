@@ -47,7 +47,7 @@ public class NuevaTareaFragment extends Fragment {
     public void onViewCreated(@NonNull View v, @Nullable Bundle s) {
         super.onViewCreated(v, s);
 
-        // Inicializar vistas
+        // Inicializar vistas 
         edtTitulo = v.findViewById(R.id.edtTitulo);
         edtDescripcion = v.findViewById(R.id.edtDescripcion);
         spinnerPrioridad = v.findViewById(R.id.spinnerPrioridad);
@@ -61,7 +61,7 @@ public class NuevaTareaFragment extends Fragment {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerPrioridad.setAdapter(adapter);
 
-        // Lanzador para elegir foto
+        // Lanzador para elegir foto 
         imagePickerLauncher = registerForActivityResult(
                 new ActivityResultContracts.GetContent(),
                 uri -> {

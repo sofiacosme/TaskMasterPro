@@ -45,7 +45,7 @@ public class RecursosFragment extends Fragment {
         btnNavegar = view.findViewById(R.id.btnNavegar);
         webView = view.findViewById(R.id.webView);
 
-        // Configurar WebView
+        // Configurar WebView 
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
 
@@ -57,7 +57,7 @@ public class RecursosFragment extends Fragment {
                 return;
             }
 
-            // Si el usuario no puso "http", lo agregamos
+            // Si el usuario no puso "http", lo agregamos 
             if (!url.startsWith("http://") && !url.startsWith("https://")) {
                 url = "https://" + url;
             }
@@ -80,7 +80,7 @@ public class RecursosFragment extends Fragment {
                 .collection("recursos")
                 .add(data)
                 .addOnSuccessListener(doc -> {
-                    // Guardado con éxito
+                    // Guardado con éxito 
                 })
                 .addOnFailureListener(e ->
                         Toast.makeText(requireContext(), "No se pudo guardar el recurso", Toast.LENGTH_SHORT).show());

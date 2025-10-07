@@ -70,7 +70,7 @@ public class PerfilFragment extends Fragment {
         edtNombre.setEnabled(false);
         btnGuardar.setVisibility(View.GONE);
 
-        // Lanzador de selección de imagen
+        // Lanzador de selección de imagen 
         imagePickerLauncher = registerForActivityResult(
                 new ActivityResultContracts.GetContent(),
                 uri -> {
