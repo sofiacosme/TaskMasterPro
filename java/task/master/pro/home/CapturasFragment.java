@@ -74,7 +74,6 @@ public class CapturasFragment extends Fragment {
         });
         recycler.setAdapter(adapter);
 
-        // Busqueda en tiempo real
         edtBuscar.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
@@ -86,13 +85,11 @@ public class CapturasFragment extends Fragment {
             public void afterTextChanged(Editable s) { }
         });
 
-        // BOTON AGREGAR
         btnAgregar.setOnClickListener(x -> {
-            // Reemplazar el contenedor actual con el fragmento de NuevaTarea
             if (getActivity() != null) {
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.right_panel, new NuevaTareaFragment()) // Asegúrate de que right_panel exista en tu layout
+                        .replace(R.id.right_panel, new NuevaTareaFragment()) 
                         .addToBackStack(null)
                         .commit();
             }

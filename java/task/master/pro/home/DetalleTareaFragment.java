@@ -27,14 +27,12 @@ public class DetalleTareaFragment extends Fragment {
     private ImageView imgTarea;
     private Button btnCompletar, btnVolver;
 
-    // Constructor vacío (obligatorio)
     public DetalleTareaFragment() { }
 
-    // Método para crear una nueva instancia con argumentos
     public static DetalleTareaFragment newInstance(Tarea tarea) {
         DetalleTareaFragment fragment = new DetalleTareaFragment();
         Bundle args = new Bundle();
-        args.putSerializable(ARG_TAREA, tarea); // Tarea debe implementar Serializable
+        args.putSerializable(ARG_TAREA, tarea); 
         fragment.setArguments(args);
         return fragment;
     }
@@ -66,9 +64,8 @@ public class DetalleTareaFragment extends Fragment {
         btnCompletar = v.findViewById(R.id.btnCompletar);
         btnVolver = v.findViewById(R.id.btnVolver);
 
-        if (tarea == null) return; // seguridad
+        if (tarea == null) return; 
 
-        // Mostrar datos
         txtTitulo.setText(tarea.getTitulo());
         txtDescripcion.setText(tarea.getDescripcion());
         txtPrioridad.setText(tarea.getPrioridad());
