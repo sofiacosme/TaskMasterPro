@@ -4,8 +4,8 @@
     android:padding="12dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <!-- Campo de búsqueda arriba -->
+    
+    <!-- Campo de búsqueda de arriba -->
     <EditText
         android:id="@+id/edtBuscar"
         android:hint="Buscar por título"
@@ -15,7 +15,7 @@
         android:background="@android:drawable/editbox_background_normal"
         android:layout_marginBottom="8dp"/>
 
-    <!-- RecyclerView para tareas -->
+    <!-- RecyclerView para las tareas -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerTareas"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Barra de botones abajo -->
+    <!-- Barra de botones de abajo -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
