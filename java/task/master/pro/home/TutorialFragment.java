@@ -34,7 +34,6 @@ public class TutorialFragment extends Fragment {
         youTubePlayerView = view.findViewById(R.id.youtubePlayerView);
         getLifecycle().addObserver(youTubePlayerView);
 
-
         String videoId = "ZokFvdw8LZs"; //
 
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
