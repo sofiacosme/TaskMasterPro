@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:gravity="top|center_horizontal">
 
-        <!-- Contenedor de foto con lápiz -->
+        <!-- Contenedor de foto con lápiz  -->
         <FrameLayout
             android:layout_width="120dp"
             android:layout_height="120dp"

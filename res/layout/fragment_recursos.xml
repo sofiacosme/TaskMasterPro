@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:background="@android:color/white">
 
-    <!-- Campo para escribir la URL -->
+    <!-- Campo para escribir la URL  -->
     <EditText
         android:id="@+id/edtUrl"
         android:layout_width="match_parent"
