@@ -11,7 +11,6 @@ public class Tarea implements Serializable {
     private boolean completada;
     private String fotoUrl; // nuevo
 
-
     private static final long serialVersionUID = 1L;
 
     // 🔹 Constructor vacío requerido por Firestore
