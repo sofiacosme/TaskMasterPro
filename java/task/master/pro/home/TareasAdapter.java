@@ -28,6 +28,7 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.ViewHolder
         void onCompletar(Tarea tarea);
     }
 
+   
     private final Context context;
     private List<Tarea> lista;
     private final OnTareaActionListener listener;
@@ -38,6 +39,7 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.ViewHolder
         this.listener = listener;
     }
 
+   
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
